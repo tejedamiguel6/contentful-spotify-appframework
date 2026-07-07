@@ -1,3 +1,18 @@
+# Spotify UI — Contentful App
+
+Custom Spotify-powered field editors for a music-journal content type
+(top artists/tracks, artist search, genres, profile data), rendered inside
+the Contentful entry editor. Data comes from the Next.js site at
+`~/Documents/Developer/website` and the Go backend at
+`api-spotify-tracks.mtejeda.co`.
+
+**Start here: `progress.md`** (local working doc, untracked) — architecture,
+how the repos fit together, Spotify auth setup (including the `127.0.0.1`
+login gotcha), work log, and next steps. `CLAUDE.md` (also untracked) holds
+agent-facing conventions.
+
+---
+
 This project was bootstrapped with [Create Contentful App](https://github.com/contentful/create-contentful-app).
 
 ## How to use
