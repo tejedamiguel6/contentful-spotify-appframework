@@ -9,11 +9,9 @@ vi.mock("@contentful/react-apps-toolkit", () => ({
 }));
 
 describe("Field component", () => {
-  it("Component text exists", () => {
+  it("shows a warning for field ids without a configured editor", () => {
     const { getByText } = render(<Field />);
 
-    expect(
-      getByText("Hello Entry Field Component (AppId: test-app)")
-    ).toBeInTheDocument();
+    expect(getByText(/No editor is configured/)).toBeInTheDocument();
   });
 });

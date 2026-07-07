@@ -10,6 +10,15 @@ const mockSdk: any = {
   ids: {
     app: 'test-app',
   },
+  field: {
+    id: 'unknown-field',
+    getValue: vi.fn(),
+    setValue: vi.fn(),
+    onValueChanged: vi.fn(),
+  },
+  entry: {
+    fields: {},
+  },
 };
 
 export { mockSdk };
