@@ -34,3 +34,19 @@ export interface ArtistSearchResponse {
     items: SpotifyArtist[];
   };
 }
+
+/** GET /api/contentful/artist-stats?name=… (listening history from the DB) */
+export interface ArtistStats {
+  artist: string;
+  totalPlays: number;
+  uniqueTracks: number;
+  uniqueAlbums: number;
+  firstPlay: string | null;
+  lastPlay: string | null;
+  topTracks: {
+    track: string;
+    album: string;
+    coverUrl: string | null;
+    plays: number;
+  }[];
+}
