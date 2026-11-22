@@ -2,6 +2,7 @@ import { GlobalStyles } from '@contentful/f36-components';
 import { SDKProvider } from '@contentful/react-apps-toolkit';
 
 import { createRoot } from 'react-dom/client';
+import './i18n';
 import App from './App';
 import LocalhostWarning from './components/LocalhostWarning';
 
